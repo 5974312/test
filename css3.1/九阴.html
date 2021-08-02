@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .box{
+            width: 1000px;
+            height: 500px;
+            margin:100px auto;
+            position: relative;
+        }
+        body{
+            background: #000;
+        }
+        .box>div>div{
+            width: 200px;
+            height: 380px;
+            margin: 0 20px;
+            float: left;
+        }
+        .dv1{
+            background: url(./images/card1.png);
+            transition: all 2s;
+            position: absolute;
+            left: 0;
+            top: -40px;
+            z-index:1;
+             backface-visibility: hidden;
+        }
+        .dv2{
+            background: url(./images/card2.png);
+             backface-visibility: hidden;
+             transition: all 2s;
+            position: absolute;
+            left: 240px;
+            top: 0;
+            z-index:1;
+        }
+        .dv3{
+            background: url(./images/card3.png);
+             backface-visibility: hidden;
+             transition: all 2s;
+            position: absolute;
+            left: 480px;
+            top: -40px;
+            z-index:1;
+        }
+        .dv4{
+            background: url(./images/card4.png);
+             backface-visibility: hidden;
+             transition: all 2s;
+            position: absolute;
+            left: 720px;
+            top: 0;
+            z-index:1;
+        }
+        .dv5{
+            background: url(./images/card5.png);
+             backface-visibility: hidden;
+             transition: all 2s;
+            position: absolute;
+            left: 960px;
+            top: -40px;
+            z-index:1;
+        }
+        .dva1{
+            background: url(./images/card1-back.png);
+            transform:rotateY(180deg);
+            transition: all 2s;
+            position: absolute;
+            left: 0;
+            top: -40px;
+            backface-visibility: visible;
+           
+        }
+        .dva2{
+            background: url(./images/card2-back.png);
+            transform:rotateY(180deg);
+            transition: all 2s;
+            position: absolute;
+            left: 240px;
+            top: 0;
+            backface-visibility: visible;
+           
+        }
+        .dva3{
+            background: url(./images/card3-back.png);
+            transform:rotateY(180deg);
+            transition: all 2s;
+            position: absolute;
+            left: 480px;
+            top: -40px;
+            backface-visibility: visible;
+           
+        }
+        .dva4{
+            background: url(./images/card4-back.png);
+            transform:rotateY(180deg);
+            transition: all 2s;
+            position: absolute;
+            left: 720px;
+            top: 0;
+            backface-visibility: visible;
+           
+        }
+        .dva5{
+            background: url(./images/card5-back.png);
+            transform:rotateY(180deg);
+            transition: all 2s;
+            position: absolute;
+            left: 960px;
+            top: -40px;
+            backface-visibility: visible;
+           
+        }
+       
+        .t1:hover .dv1{
+            transform:rotateY(180deg);
+        }
+        .t2:hover .dv2{
+            transform:rotateY(180deg);
+        }
+        .t3:hover .dv3{
+            transform:rotateY(180deg);
+        }
+        .t4:hover .dv4{
+            transform:rotateY(180deg);
+        }
+        .t5:hover .dv5{
+            transform:rotateY(180deg);
+        }
+        .t1:hover .dva1{
+            transform:rotateY(360deg);
+        }
+        .t2:hover .dva2{
+            transform:rotateY(360deg);
+        }
+        .t3:hover .dva3{
+            transform:rotateY(360deg);
+        }
+        .t4:hover .dva4{
+            transform:rotateY(360deg);
+        }
+        .t5:hover .dva5{
+            transform:rotateY(360deg);
+        }
+    </style>
+</head>
+<body>
+        <div class="box">
+        <div class="t1"><div class="dv1"></div><div class="dva1"></div></div>
+        <div class="t2"><div class="dv2"></div><div class="dva2"></div></div>
+        <div class="t3"><div class="dv3"></div><div class="dva3"></div></div>
+        <div class="t4"><div class="dv4"></div><div class="dva4"></div></div>
+        <div class="t5"><div class="dv5"></div><div class="dva5"></div></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        overflow:hidden;
+    }
+    .yun{
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+    .yuan1{
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 200px;
+        height: 50px;
+        border-radius:25px ;
+        background: #fff;
+        position: absolute;
+    }
+    .yuan2{
+        margin-top: 45px;
+        margin-left: -5px;
+        width: 200px;
+        height: 25px;
+        border-radius:12.5px ;
+        background: #fff;
+        position: absolute;
+}
+.an1{
+    left: -50%;
+    animation:an1 5s linear infinite;
+    
+    }
+    @keyframes an1{
+      0%{left: -50%;}
+      25%{left: -12.5%;}
+      50%{left: 25%;}
+      75%{left: 67.5%;}
+      100%{left: 100%;}
+    }
+    .an2{
+    left: 20%;
+    animation:an2 8s linear infinite;
+    }
+    @keyframes an2{
+      0%{left: 20%;}
+      25%{left: 57.5%;}
+      50%{left: 95%;}
+      53%{left: 100%;}
+      53.001%{left: -50%;}
+      75%{left: -12.5%;}
+      100%{left: 20%;}
+    }
+    .an3{
+    left: 20%;
+    animation:an3 10s linear infinite;
+    }
+    @keyframes an3{
+      0%{left: 50%;}
+      25%{left: 87.5%;}
+      34%{left: 100%;}
+      34.01%{left:-50%}
+      50%{left: -25%;}
+      75%{left: 12.5%;}
+      100%{left: 50%;}
+    }
+    .bottom{
+        top: 200px;;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        position: relative;
+    }
+    .at1{
+        width: 40px;
+        height: 40px;
+        background-color: gray;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .at2{
+        width: 10px;
+        height: 300px;
+        left: -35px;
+        background-color: gray;
+        transform: rotate(20deg);
+        position: absolute;
+    }
+    .at3{
+        width: 10px;
+        height: 300px;
+        left: 70px;
+        background-color: gray;
+        transform: rotate(-20deg);
+        position: absolute;
+    }
+    .at4{
+        width: 40px;
+        height: 8px;
+        background-color: gray;
+        position: absolute;
+        left: 105px;
+        top: 287px;
+    }
+    .at5{
+        width: 40px;
+        height: 8px;
+        background-color: gray;
+        position: absolute;
+        left: -105px;
+        top: 287px;
+    }
+    .xian{
+        width: 7px;
+        height: 220px;
+        left: 20px;
+        top: 20px;
+        background-color: rgb(177, 151, 80);
+        position: absolute;
+    }
+    .ban{
+        width: 30px;
+        height: 8px;
+        left: 10px;
+        top: 240px;
+        background-color: rgb(221, 168, 21);
+        position: absolute;
+    }
+    .fa{
+        width: 40px;
+        height: 35px;
+        top: 115px;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 30%;
+        background-color: rgb(53, 50, 43);
+        position: absolute;
+    }
+    .tou{
+        width: 30px;
+        height: 30px;
+        left: 10px;
+        top: 120px;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 30%;
+        background-color: rgb(202, 191, 161);
+        position: absolute;
+    }
+    .yan{
+        width: 5px;
+        height: 5px;
+        left:30px;
+        top: 130px;
+        border-radius: 50%;
+        background-color: black;
+        position: absolute;
+    }
+    .shen{
+        width: 30px;
+        height: 60px;
+        left: 10px;
+        top: 150px;
+        border-top-right-radius: 70%;
+        background-color: rgb(172, 161, 202);
+        position: absolute;
+    }
+    
+    .tui1{
+        width: 30px;
+        height: 30px;
+        left: 10px;
+        top: 210px;
+        border-bottom-left-radius: 30%;
+        background-color: rgb(122, 52, 58);
+        position: absolute;
+    }
+    .tui2{
+        width: 15px;
+        height: 60px;
+        left: 40px;
+        top: 220px;
+        border-top-right-radius: 80%;
+        background-color: rgb(202, 191, 161);
+        position: absolute;
+    
+    animation:tui 2s linear infinite;
+    }
+    @keyframes tui{
+      0%{-webkit-transform:rotate(0deg);}
+      25%{-webkit-transform:rotate(20deg);}
+      50%{-webkit-transform:rotate(0deg);}
+      75%{-webkit-transform:rotate(-10deg);}
+      100%{-webkit-transform:rotate(0deg);}
+    }
+    .tian{
+        width: 20px;
+        height: 20px;
+        background-color: rgb(202, 191, 161);
+        margin-left: -15px;
+    }
+    .shou1{
+        width: 10px;
+        height: 60px;
+        left: 0px;
+        top: 150px;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        background-color: rgb(34, 30, 20);
+        transform: rotate(20deg);
+        position: absolute;
+    }
+    .shou2{
+        width: 10px;
+        height: 35px;
+        left: 5px;
+        top: 190px;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background-color: rgb(34, 30, 20);
+        transform: rotate(80deg);
+        position: absolute;
+    }
+    .ren{
+        width: 1px;
+        height: 1px;
+        background-color: blue;
+        animation:ren 2s linear infinite;
+    }
+    @keyframes ren{
+      0%{-webkit-transform:rotate(0deg);}
+      25%{-webkit-transform:rotate(20deg);}
+      50%{-webkit-transform:rotate(0deg);}
+      75%{-webkit-transform:rotate(-20deg);}
+      100%{-webkit-transform:rotate(0deg);}
+    }
+    </style>
+<body bgcolor="#86D4FB">
+    <div class="top">
+<div class="yun an1">
+    <div class="yuan1">
+        
+    </div>
+   <div class="yuan2">
+
+   </div>
+    
+</div>
+<div class="yun an2">
+    <div class="yuan1">
+        
+    </div>
+   <div class="yuan2">
+
+   </div>
+    
+</div>
+<div class="yun an3">
+    <div class="yuan1">
+        
+    </div>
+   <div class="yuan2">
+
+   </div>
+    
+</div>
+    </div>
+    <div class="bottom">
+        <div class="qian">
+            <div class="ren">
+                <div class="fa">
+
+                </div>
+                <div class="tou">
+                    
+                </div>
+                <div class="yan">
+
+                    </div>
+                <div class="shen">
+
+                </div>
+                
+                <div class="tui2">
+                <div class="tian"> 
+                     </div>
+                </div>
+                <div class="tui1">
+                    
+                </div>
+                <div class="xian">
+
+                </div>
+                <div class="shou1">
+
+                </div>
+                <div class="shou2">
+
+                </div>
+                <div class="ban">
+
+                </div>
+            </div>
+            <div class="at1"></div>
+            <div class="at2"></div>
+            <div class="at3"></div>
+            <div class="at4"></div>
+            <div class="at5"></div>
+           
+        </div>
+    </div>
+</body>
+</html>
